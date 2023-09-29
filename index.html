@@ -35,7 +35,7 @@
             <ul v-if="tasks.length > 0">
                 <li v-for="(task,index) in tasks">
                     <span :class="{'complete' : task.done }" >{{ task.text }}</span>    
-                    <i @click="removeTask(index)" class="fa-solid fa-bomb"></i>
+                    <i @click="removeTask(index, task.done)" class="fa-solid fa-bomb"></i>
                 </li>
                 
             </ul>

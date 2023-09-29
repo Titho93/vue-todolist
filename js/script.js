@@ -20,7 +20,8 @@ createApp({
                 },
             ],
             newTask:'',
-            isError: false
+            isError: false,
+            isDone: true
         }
 
     },
@@ -38,8 +39,11 @@ createApp({
 
         },
     
-        removeTask(index){
-            this.tasks.splice(index, 1)
+        removeTask(index, isDone){
+
+            if(isDone){
+                this.tasks.splice(index, 1)
+            }
         }
     }
 
