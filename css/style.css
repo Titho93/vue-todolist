@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.logo img {
+    width: 130px;  
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 130px;
+    padding-left: 30px; 
+}
+
+h1 span {
+    color: #BD8C32;
+}
