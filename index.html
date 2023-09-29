@@ -16,7 +16,7 @@
 
     <div id="app" class="container">
         <div class="logo">
-            <img src="img/Gold_Team_Emblem_B.webp" alt="Logo">
+            <img src="img/Gold_Team_Emblem_TB.webp" alt="Logo">
             <h1>TO <span>DO</span>  LIST</h1>
         </div>
         <div class="task-input">
@@ -27,6 +27,9 @@
             @keyup.enter="addTask"
             >
             <button @click="addTask">Send</button>
+            <span v-if="isError" class="red">
+                The task must contain at least 3 characters
+            </span>
         </div>
         <div class="task-contenitor">
             <ul v-if="tasks.length > 0">
