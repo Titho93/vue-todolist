@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -31,6 +31,7 @@ h1 span {
 
 .task-input {
     text-align: center;
+    margin: 50px 0;
 }
 
 .task-input input {
@@ -47,4 +48,37 @@ h1 span {
     color: #BD8C32;
     border: 2px solid #BD8C32;
     border-radius: 20px;
+}
+
+.task-input button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.task-contenitor {
+    background-color: #BD8C32;
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.task-contenitor ul {
+    list-style: none;
+}
+
+.task-contenitor li {
+    border-bottom: 1px solid black;
+    padding: 10px 20px; 
+}
+
+.task-contenitor li:hover {
+    background-color: #ba9d68;
+}
+
+.task-contenitor li i {
+    float: right;
+}
+
+.task-contenitor li i:hover {
+    color: red;
 }
