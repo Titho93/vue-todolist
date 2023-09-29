@@ -28,3 +28,23 @@ h1 {
 h1 span {
     color: #BD8C32;
 }
+
+.task-input {
+    text-align: center;
+}
+
+.task-input input {
+    padding: 8px 85px;
+    background-color: #BD8C32;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.task-input button {
+    padding: 8px 20px;
+    background-color: black;
+    color: #BD8C32;
+    border: 2px solid #BD8C32;
+    border-radius: 20px;
+}
