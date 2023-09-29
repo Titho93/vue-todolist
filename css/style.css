@@ -92,3 +92,9 @@ h1 span {
 .complete {
     text-decoration: line-through;
 }
+
+h3 {
+    text-align: center;
+    padding-top: 10px;
+    color: red;
+}

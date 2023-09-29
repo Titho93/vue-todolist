@@ -21,7 +21,8 @@ createApp({
             ],
             newTask:'',
             isError: false,
-            isDone: true
+            isDone: true,
+            message: ``
         }
 
     },
@@ -43,6 +44,9 @@ createApp({
 
             if(isDone){
                 this.tasks.splice(index, 1)
+                this.message = ``
+            }else {
+                this.message = `Non puoi eliminare un task non svolto`
             }
         }
     }
