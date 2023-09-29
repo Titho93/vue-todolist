@@ -20,8 +20,13 @@
             <h1>TO <span>DO</span>  LIST</h1>
         </div>
         <div class="task-input">
-            <input type="text" placeholder="Insert New Task">
-            <button>Send</button>
+            <input
+            v-model="newTask" 
+            type="text" 
+            placeholder="Insert New Task"
+            @keyup.enter="addTask"
+            >
+            <button @click="addTask">Send</button>
         </div>
         <div class="task-contenitor">
             <ul>
