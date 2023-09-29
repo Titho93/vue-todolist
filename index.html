@@ -21,7 +21,7 @@
         </div>
         <div class="task-input">
             <input
-            v-model="newTask" 
+            v-model.trim="newTask"  
             type="text" 
             placeholder="Insert New Task"
             @keyup.enter="addTask"

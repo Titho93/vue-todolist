@@ -10,14 +10,20 @@ createApp({
                 'Portafoglio',
                 'Telefono'
             ],
-            newTask:''
+            newTask:'',
+            isError: false
         }
 
     },
     methods:{
         addTask(){
-            this.tasks.unshift(this.newTask)
-            this.newTask = ''
+            if(this.newTask.length < 3){
+                this.isError = true
+            }else {
+                this.tasks.unshift(this.newTask)
+                this.newTask = ''
+                this.isError = false
+            }
         },
 
         removeTask(index){
