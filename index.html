@@ -30,9 +30,9 @@
         </div>
         <div class="task-contenitor">
             <ul>
-                <li v-for="task in tasks">
+                <li v-for="(task, index) in tasks">
                     <span>{{ task }}</span>    
-                    <i class="fa-solid fa-bomb"></i>
+                    <i @click="removeTask" class="fa-solid fa-bomb"></i>
                 </li>
                 
             </ul>
