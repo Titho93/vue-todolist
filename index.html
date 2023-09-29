@@ -34,7 +34,7 @@
         <div class="task-contenitor">
             <ul v-if="tasks.length > 0">
                 <li v-for="(task, index) in tasks">
-                    <span>{{ task }}</span>    
+                    <span>{{ task.text }}</span>    
                     <i @click="removeTask" class="fa-solid fa-bomb"></i>
                 </li>
                 

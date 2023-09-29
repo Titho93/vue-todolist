@@ -6,9 +6,18 @@ createApp({
 
         return{
             tasks: [
-                'Chiavi',
-                'Portafoglio',
-                'Telefono'
+                {
+                   text: 'Chiavi',
+                   done: false
+                },
+                {
+                   text: 'Portafoglio',
+                   done: false
+                },
+                {
+                   text: 'Telefono',
+                   done: false
+                },
             ],
             newTask:'',
             isError: false
