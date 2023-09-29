@@ -88,3 +88,7 @@ h1 span {
     display: block;
     padding-top: 10px;
 }
+
+.complete {
+    text-decoration: line-through;
+}

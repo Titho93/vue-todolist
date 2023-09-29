@@ -16,7 +16,7 @@ createApp({
                 },
                 {
                    text: 'Telefono',
-                   done: false
+                   done: true
                 },
             ],
             newTask:'',
