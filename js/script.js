@@ -31,10 +31,12 @@ createApp({
 
             if(this.newTask.length < 3){
                 this.isError = true
+                this.message = ``
             }else {
                 // this.tasks.unshift(this.newTask)
                 this.tasks.unshift({ text: this.newTask, done: false });
                 this.newTask = ''
+                this.message = ``
                 this.isError = false
             }
 

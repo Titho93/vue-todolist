@@ -73,6 +73,7 @@ h1 span {
 
 .task-contenitor li:hover {
     background-color: #ba9d68;
+    cursor: pointer;
 }
 
 .task-contenitor li i {
