@@ -17,6 +17,7 @@ createApp({
     methods:{
         addTask(){
             this.tasks.unshift(this.newTask)
+            this.newTask = ''
         },
 
         removeTask(index){
