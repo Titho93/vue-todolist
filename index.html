@@ -25,16 +25,8 @@
         </div>
         <div class="task-contenitor">
             <ul>
-                <li>
-                    <span>Chiavi</span>    
-                    <i class="fa-solid fa-bomb"></i>
-                </li>
-                <li>
-                    <span>Portafoglio</span>    
-                    <i class="fa-solid fa-bomb"></i>
-                </li>
-                <li>
-                    <span>Telefono</span>    
+                <li v-for="task in tasks">
+                    <span>{{ task }}</span>    
                     <i class="fa-solid fa-bomb"></i>
                 </li>
                 
